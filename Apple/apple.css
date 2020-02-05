@@ -12,6 +12,15 @@ body {
   background-color: #ffcc66;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+.apple{
+  animation: fadeIn 3s ease-in-out;
+}
+
 .apple-body {
   display: flex;
   height: 350px;
@@ -20,35 +29,59 @@ body {
   border-radius: 46%;
 }
 
-.light{
-    position: relative;
-    top: 9%;
-    left: -50px;
-    height: 280px;
-    width: 300px;
-    border-radius: 50%;
-    box-shadow: -20px 0 0 0 white;
+.light {
+  position: relative;
+  top: 9%;
+  left: -50px;
+  height: 280px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: -20px 0 0 0 white;
 }
 
-.shadow{
-    position: relative;
-    top: 12%;
-    right: 8%;
-    height: 250px;
-    width: 300px;
-    border-radius: 50%;
-    box-shadow: 10px 0 0 0 brown;
+.shadow {
+  position: relative;
+  top: 12%;
+  right: 8%;
+  height: 250px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 10px 0 0 0 brown;
 }
 
-.stalk{
-    position: relative;
-    top: -15px;
-    left: 35%;
+.stalk {
+  position: relative;
+  top: -100px;
+  left: 35%;
 }
 
-.stalk-base{
-    height: 50px;
-    width: 100px;
-    border-radius: 50%;
-    box-shadow: 0 10px 0 0 brown;
+.stalk-base {
+  position: relative;
+  height: 50px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 10px 0 0 brown;
+  top: -120px;
+}
+
+.stalk-body {
+  position: relative;
+  width: 20px;
+  height: 0;
+  top: -80px;
+  left: 35px;
+  border-right: 25px solid transparent;
+  border-left: 0 solid transparent;
+  border-top: 100px solid brown;
+}
+
+.stalk-leaf {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #5e7e1f;
+  border-radius: 0 75px;
+  right: 75px;
+  top:-10px;
+  transform: rotate(-20deg);
 }
