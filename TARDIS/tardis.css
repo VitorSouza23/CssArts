@@ -12,9 +12,16 @@ body {
   background-color: #d4eeec;
 }
 
+.tardis{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .tardis-body {
   height: 400px;
-  width: 250px;
+  width: 230px;
   background-color: rgb(0, 0, 121);
   display: flex;
   justify-content: center;
@@ -23,22 +30,23 @@ body {
 
 .tardis-body-inside {
   height: 370px;
-  width: 220px;
+  width: 200px;
   background-color: rgb(18, 18, 146);
-  display: flex;
-  flex-flow: row wrap;
+  display: table;
 }
 
 .window {
-    flex: 1;
-  display: table;
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   margin: 10px 10px;
 }
 
 .window.window-white{
     background-color: white;
+}
+
+.window.window-black{
+  background-color: rgb(24, 23, 23);
 }
 
 .window.window-blue{
@@ -55,4 +63,59 @@ body {
 .window-grid td {
   border: 3px solid black;
   border-collapse: collapse;
+}
+
+.tardis-base{
+  width: 250px;
+  height: 10px;
+  background-color: rgb(18, 18, 146);
+}
+
+.tardis-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 235px;
+  height: 50px;
+  background-color: rgb(18, 18, 146);
+}
+
+.tardis-head-inside{
+  width: 200px;
+  height: 30px;
+  background-color: black;
+}
+
+.tardis-top{
+  width: 200px;
+  height: 10px;
+  background-color: rgb(0, 0, 121);
+}
+
+.tardis-lamp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lamp-base{
+  width: 30px;
+  height: 5px;
+  background-color: rgb(0, 0, 121);
+}
+
+.lamp-body{
+  width: 25px;
+  height: 20px;
+  background-color: rgb(199, 199, 250);
+  box-shadow: 0px 0px 18px rgb(199, 202, 5);
+}
+
+.lamp-top{
+  border-bottom: 10px solid  rgb(0, 0, 121);;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  height: 0;
+  width: 30px;
 }
